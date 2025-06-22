@@ -1,0 +1,61 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Hospital App</a>
+
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <!-- BACK Button -->
+        <li class="nav-item">
+          <a
+            class="nav-link active"
+            style="color: white"
+            aria-current="page"
+            routerLink="/docdash"
+            href="javascript:void(0);"
+          >
+            BACK
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Patient Details Card -->
+<div class="container mt-5">
+  <div class="card shadow-sm">
+    <div class="card-header bg-primary text-white">
+      <h4 class="mb-0">Patient Details</h4>
+    </div>
+    <div class="card-body">
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item"><strong>ID:</strong> {{ patient.id }}</li>
+        <li class="list-group-item">
+          <strong>Name:</strong> {{ patient.name }}
+        </li>
+        <li class="list-group-item"><strong>Age:</strong> {{ patient.age }}</li>
+        <li class="list-group-item">
+          <strong>Blood Group:</strong> {{ patient.blood }}
+        </li>
+        <li class="list-group-item">
+          <strong>Dose:</strong> {{ patient.dose }}
+        </li>
+        <li class="list-group-item">
+          <strong>Fees:</strong> ₹{{ patient.fees }}
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

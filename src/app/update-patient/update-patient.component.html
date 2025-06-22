@@ -1,0 +1,74 @@
+<div class="container">
+  <h2 class="text-center">Update patient</h2>
+
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label>Name</label>
+      <input
+        type="text "
+        name="name"
+        id="name "
+        class="form-control"
+        placeholder="Enter name"
+        [(ngModel)]="patient.name"
+      />
+      <label>Age</label>
+      <input
+        type="text"
+        id="age"
+        name="age "
+        placeholder="Enter age"
+        class="form-control"
+        [(ngModel)]="patient.age"
+      />
+      <label>blood</label>
+      <input
+        type="text"
+        id="blood"
+        name="blood "
+        placeholder="Enter blood"
+        class="form-control"
+        [(ngModel)]="patient.blood"
+      />
+      <label>Prescription</label>
+      <input
+        type="text"
+        id="Prescription"
+        name="Prescription "
+        placeholder="Enter Prescription"
+        class="form-control"
+        [(ngModel)]="patient.prescription"
+      />
+      <label>Dose</label>
+      <input
+        type="text"
+        id="Dose"
+        name="Dose "
+        placeholder="Enter Dose"
+        class="form-control"
+        [(ngModel)]="patient.dose"
+      />
+      <label>fees</label>
+      <input
+        type="text"
+        id="fees"
+        name="fees "
+        placeholder="Enter fees"
+        class="form-control"
+        [(ngModel)]="patient.fees"
+      />
+      <label>Urgency</label>
+      <input
+        type="text"
+        id="Urgency"
+        name="Urgency "
+        placeholder="Enter Urgency"
+        class="form-control"
+        [(ngModel)]="patient.urgency"
+      />
+      <div>
+        <button type="submit" class="btn btn-success">Submit</button>
+      </div>
+    </div>
+  </form>
+</div>
